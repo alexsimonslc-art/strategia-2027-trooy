@@ -1,9 +1,142 @@
 {
-  "name": "Strategia 2027",
-  "slug": "strategia-2027-trooy",
-  "template": "blank",
-  "pages": [
-    "index"
-  ],
-  "version": 1
+  "generator": "ui-library",
+  "version": 1,
+  "style": "glass",
+  "palette": "aurora-night",
+  "fonts": "syne+inter",
+  "spec": {
+    "style": "glass",
+    "palette": "aurora-night",
+    "fonts": "syne+inter",
+    "event": {
+      "name": "Strategia 2027"
+    },
+    "pages": [
+      {
+        "name": "index",
+        "title": "Home",
+        "sections": [
+          {
+            "type": "hero",
+            "scene": "cinematic",
+            "background": {
+              "video": "stage-lights",
+              "grade": "cool",
+              "scrim": "heavy"
+            },
+            "effects": [
+              "data-stars",
+              "txt-gradient",
+              "btn-shine"
+            ],
+            "content": {
+              "badge": "STRATEGIA 2027 // THE CULTURAL CONVERGENCE",
+              "headline": "Where Strategy Meets Creative Chaos",
+              "sub": "The ultimate arena of art, performance, and cultural supremacy.",
+              "ctaText": "Secure Your Pass",
+              "ctaHref": "pages/register.html",
+              "image": "https://images.pexels.com/photos/37882408/pexels-photo-37882408.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+            }
+          },
+          {
+            "type": "about",
+            "scene": "parallax",
+            "effects": [
+              "data-spotlight"
+            ],
+            "content": {
+              "title": "The Arena of Intellect & Art",
+              "body": "Strategia 2027 is the premier intercollegiate cultural convergence where strategic mind games clash with raw artistic expression. Over three action-packed days, visionaries, performers, and tacticians from across the nation will compete for ultimate glory. This is not just a festival; it is a battleground of intellect and creativity designed to push the boundaries of what a cultural event can be."
+            }
+          },
+          {
+            "type": "schedule",
+            "content": {
+              "title": "The Strategic Lineup",
+              "items": [
+                {
+                  "time": "09:00 AM",
+                  "title": "The Opening Gambit",
+                  "desc": "Inauguration and keynotes setting the stage for the intense strategic and creative challenges ahead."
+                },
+                {
+                  "time": "11:30 AM",
+                  "title": "Battle of the Bands",
+                  "desc": "High-octane musical showdowns where live bands duel for sonic supremacy on the main stage."
+                },
+                {
+                  "time": "02:30 PM",
+                  "title": "Choreographed Chaos",
+                  "desc": "A spectacular display of synchronized dance, theatrical storytelling, and intense movement styling."
+                },
+                {
+                  "time": "06:00 PM",
+                  "title": "Street Beats & Cyphers",
+                  "desc": "Raw hip-hop, live beatboxing, and freestyle street dance battles under the neon lights."
+                },
+                {
+                  "time": "09:00 PM",
+                  "title": "Starry Night Headliner",
+                  "desc": "An unforgettable live concert featuring a chart-topping electronic artist to close out the opening phase."
+                }
+              ]
+            }
+          },
+          {
+            "type": "gallery",
+            "content": {
+              "title": "The Visual Legacy",
+              "images": [
+                "https://images.pexels.com/photos/36882728/pexels-photo-36882728.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/37882407/pexels-photo-37882407.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/12657546/pexels-photo-12657546.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/20993079/pexels-photo-20993079.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/6398745/pexels-photo-6398745.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+                "https://images.pexels.com/photos/5193531/pexels-photo-5193531.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"
+              ]
+            }
+          },
+          {
+            "type": "countdown",
+            "content": {
+              "title": "The Clash Begins In",
+              "date": "2027-02-18T09:00:00"
+            }
+          },
+          {
+            "type": "cta",
+            "background": {
+              "video": "crowd-night",
+              "grade": "warm",
+              "scrim": "medium"
+            },
+            "effects": [
+              "btn-borderglow"
+            ],
+            "content": {
+              "title": "Ready to Claim the Crown?",
+              "sub": "Registration closes soon. Assemble your crew, plan your strategy, and write your name into history.",
+              "ctaText": "Register Now",
+              "ctaHref": "pages/register.html"
+            }
+          }
+        ]
+      },
+      {
+        "name": "register",
+        "title": "Register",
+        "sections": [
+          {
+            "type": "form",
+            "effects": [
+              "fx-aurora"
+            ],
+            "content": {
+              "title": "Secure your spot at Strategia 2027"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
