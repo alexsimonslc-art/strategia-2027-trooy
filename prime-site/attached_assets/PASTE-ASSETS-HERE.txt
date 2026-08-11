@@ -1,0 +1,24 @@
+PASTE YOUR 121 ASSET FILES INTO THIS FOLDER
+===========================================
+
+Copy everything from the original project's
+
+    Strategia\attached_assets\
+
+directly into THIS folder (not into a subfolder). You should end up with:
+
+    client/public/attached_assets/StrategIQ_1756909440871.png
+    client/public/attached_assets/Domain Logo_1757334218512.png
+    client/public/attached_assets/Case Quest (2)_1756909440874.jpg
+    ... and the other 118 files
+
+WHY HERE
+--------
+Express used to serve that folder at the URL /attached_assets. Vite copies
+everything in client/public/ to the site root, so files land at exactly the
+same URLs. That is why not a single image path in the code had to change.
+
+Do NOT rename the files. The names contain the timestamps the code
+references (e.g. "_1756909440871").
+
+You can delete this .txt file once the assets are in.
