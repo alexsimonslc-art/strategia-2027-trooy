@@ -1,0 +1,109 @@
+Act as a professional frontend engineer + brand UX strategist.
+Build a responsive, event-focused website for STRATEGIA’26 – A Business Strategy Challenge, using the visual identity from the provided logo and PDF.
+The website must use the official color palette (#00204E, #E30613, #FFFFFF) and echo the tone of corporate simulations and strategy under pressure.
+It should be as clean and functional as the IIT-B Eureka or IIM-A Red Brick Summit site, but optimized for smooth UX, mobile responsiveness, and real-time team engagement.
+
+📁 Site Map Structure (Pages & Sections)
+1. Homepage
+Hero section (with logo, tagline: Decisions • Pressure • Composure)
+
+Countdown Timer
+
+CTA buttons: [Register], [Explore Events], [Contact]
+
+Animated background (particles or soft motion stripes)
+
+Optional: Aftermovie/Recap teaser embed
+
+2. About Strategia
+Mission (from proposal)
+
+What makes it unique (comparison blocks)
+
+Value prop: “Where future CXOs are born”
+
+3. Event Line-up
+Each event has its own card and route/page:
+
+Strategia Prodigy
+
+Portfolio Playbook
+
+Boardroom Blitz
+
+Strategia Case Vault
+
+Grand Boardroom Showdown
+
+Each page includes:
+
+What it is
+
+Rounds
+
+Key Skills/Outcomes
+
+Judging Criteria
+
+Prize pool highlight
+
+Register CTA
+
+4. Registration System
+Team registration form
+
+Auto-email confirmation via EmailJS or Firebase
+
+Backend via Google Sheets, Supabase, or Airtable (your choice)
+
+₹300 payment integration (Razorpay ideal)
+
+5. Schedule Page
+Full timeline (table + downloadable .ics and PDF)
+
+Filters: Day-wise / Event-wise
+
+6. Leaderboard (if applicable)
+For Prodigy/Playbook
+
+Realtime points display (optional: Firebase backend)
+
+7. Sponsors & ACCA Collaboration
+Logo bar of sponsors
+
+Separate ACCA page:
+
+Areas of support
+
+Mentions on branding
+
+ACCA session info (if confirmed)
+
+8. Gallery
+Photos & videos from previous editions
+
+Social embed (Insta reels / YouTube shorts)
+
+9. Contact
+Map embed (Loyola)
+
+Organizing team contacts
+
+Socials (IG, LinkedIn, Gmail)
+
+10. Footer
+College credit
+
+Social links
+
+“Made with 🔥 by Team Strategia 2026”
+
+⚙️ Suggested Tech Stack
+Layer	Stack
+Frontend	React + Tailwind (or Next.js)
+Backend	Firebase / Supabase
+Forms/DB	Google Sheets or Airtable
+Email	EmailJS / SMTP
+Payments	Razorpay
+Hosting	Vercel / Netlify / Replit
+

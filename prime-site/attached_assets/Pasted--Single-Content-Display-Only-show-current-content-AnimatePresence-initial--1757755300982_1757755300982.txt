@@ -1,0 +1,225 @@
+{/* Single Content Display - Only show current content */}
+              <AnimatePresence initial={false}>
+              {carouselIndex === 0 && (
+                <motion.div 
+                  key="content-0"
+                  className="absolute inset-0 w-full h-full flex items-center"
+                  initial={{ x: '100%' }}
+                  animate={{ x: '0%' }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  {/* MODIFIED: Added horizontal padding (px-*) to match the 4th card */}
+                  <Link to="/events" className="flex flex-col mobile-lg:flex-row mobile-lg:items-center w-full h-full mobile-lg:gap-2 sm:gap-3 md:gap-4 px-2 mobile-sm:px-3 md:px-4">
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      <motion.div 
+                        className="flex items-center mb-1"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                      >
+                        <Trophy className="
+                          w-3 h-3 mobile-sm:w-4 mobile-sm:h-4 mobile-md:w-4 mobile-md:h-4 sm:w-5 sm:h-5 
+                          text-yellow-600 mr-1 mobile-sm:mr-2 flex-shrink-0" />
+                        <h4 className="
+                          text-[10px] mobile-sm:text-xs mobile-md:text-xs mobile-lg:text-xs sm:text-sm 
+                          font-bold text-strategia-navy uppercase tracking-wider truncate">Final Championship</h4>
+                      </motion.div>
+                      <motion.h5 
+                        className="
+                        text-xs mobile-sm:text-sm mobile-md:text-sm mobile-lg:text-base sm:text-lg 
+                        font-bold text-yellow-600 mb-1 truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Final Showdown</motion.h5>
+                      <motion.p 
+                        className="
+                        text-[9px] mobile-sm:text-xs mobile-md:text-xs mobile-lg:text-xs sm:text-sm 
+                        text-gray-600 truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Pressure peaks. One champion rises.</motion.p>
+                    </div>
+                    <motion.div 
+                      className="flex items-center text-strategia-navy font-medium 
+                      text-[9px] mobile-sm:text-xs mobile-md:text-xs mobile-lg:text-xs sm:text-sm 
+                      mt-1 mobile-lg:mt-0 flex-shrink-0 self-start mobile-lg:self-center"
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, ease: "easeOut"}}
+                    >
+                      <Trophy className="
+                        w-2 h-2 mobile-sm:w-3 mobile-sm:h-3 mobile-md:w-3 mobile-md:h-3 sm:w-4 sm:h-4 
+                        mr-1 text-yellow-600 flex-shrink-0" />
+                      <span className="whitespace-nowrap">₹1,00,000</span>
+                    </motion.div>
+                  </Link>
+                </motion.div>
+              )}
+
+              {carouselIndex === 1 && (
+                <motion.div 
+                  key="content-1"
+                  className="absolute inset-0 w-full h-full flex items-center"
+                  initial={{ x: '100%' }}
+                  animate={{ x: '0%' }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  {/* MODIFIED: Added horizontal padding (px-*) */}
+                  <Link to="/schedule" className="flex items-center w-full h-full px-2 mobile-sm:px-3 md:px-4">
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      <motion.div 
+                        className="flex items-center mb-1 mobile-sm:mb-2"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                      >
+                        <Clock className="w-3 h-3 mobile-sm:w-4 mobile-sm:h-4 sm:w-5 sm:h-5 text-green-600 mr-1 mobile-sm:mr-2 flex-shrink-0" />
+                        <h4 className="text-[10px] mobile-sm:text-xs sm:text-sm font-bold text-strategia-navy uppercase tracking-wider truncate">Schedule Update</h4>
+                      </motion.div>
+                      <motion.h5 
+                        className="text-xs mobile-sm:text-sm mobile-md:text-base sm:text-lg font-bold text-green-600 mb-1 sm:mb-2 truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Day 1 Timeline</motion.h5>
+                      <motion.p 
+                        className="text-gray-600 text-[9px] mobile-sm:text-xs sm:text-sm truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Quizzes. Challenges. The battles begin.</motion.p>
+                    </div>
+                  </Link>
+                </motion.div>
+              )}
+
+              {carouselIndex === 2 && (
+                <motion.div 
+                  key="content-2"
+                  className="absolute inset-0 w-full h-full flex items-center"
+                  initial={{ x: '100%' }}
+                  animate={{ x: '0%' }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                >
+                  {/* MODIFIED: Added horizontal padding (px-*) */}
+                  <Link to="/schedule" className="flex items-center w-full h-full px-2 mobile-sm:px-3 md:px-4">
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      <motion.div 
+                        className="flex items-center mb-1 mobile-sm:mb-2"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >
+                        <Clock className="w-3 h-3 mobile-sm:w-4 mobile-sm:h-4 sm:w-5 sm:h-5 text-green-600 mr-1 mobile-sm:mr-2 flex-shrink-0" />
+                        <h4 className="text-[10px] mobile-sm:text-xs sm:text-sm font-bold text-strategia-navy uppercase tracking-wider truncate">Schedule Update</h4>
+                      </motion.div>
+                      <motion.h5 
+                        className="text-xs mobile-sm:text-sm mobile-md:text-base sm:text-lg font-bold text-green-600 mb-1 sm:mb-2 truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Day 2 Timeline</motion.h5>
+                      <motion.p 
+                        className="text-gray-600 text-[9px] mobile-sm:text-xs sm:text-sm truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                      >High stakes. Fierce rounds. Road to glory.</motion.p>
+                    </div>
+                  </Link>
+                </motion.div>
+              )}
+
+              {carouselIndex === 3 && (
+                <motion.div 
+                  key="content-3"
+                  className="absolute inset-0 w-full h-full flex items-center"
+                  initial={{ x: '100%' }}
+                  animate={{ x: '0%' }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                >
+                  {/* MODIFIED: Added horizontal padding (px-*) */}
+                  <Link to="/sponsors" className="flex flex-col mobile-lg:flex-row mobile-lg:items-center w-full h-full mobile-lg:gap-2 sm:gap-3 md:gap-4 px-2 mobile-sm:px-3 md:px-4">
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      <motion.div 
+                        className="flex items-center mb-1 mobile-sm:mb-2"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >
+                        <img 
+                          src="/attached_assets/ACCA_logo.svg_1753893407758.png" 
+                          alt="ACCA"
+                          className="w-3 h-3 mobile-sm:w-4 mobile-sm:h-4 sm:w-5 sm:h-5 mr-1 mobile-sm:mr-2 object-contain flex-shrink-0"
+                        />
+                        <h4 className="text-[10px] mobile-sm:text-xs sm:text-sm font-bold text-strategia-navy uppercase tracking-wider truncate">Knowledge Partner</h4>
+                      </motion.div>
+                      <motion.h5 
+                        className="text-xs mobile-sm:text-sm mobile-md:text-base sm:text-lg font-bold text-strategia-red mb-1 sm:mb-2 truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                      >ACCA (UK)</motion.h5>
+                      <motion.p 
+                        className="text-gray-600 text-[9px] mobile-sm:text-xs sm:text-sm truncate"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                      >Powered by ACCA — global edge, global impact.</motion.p>
+                    </div>
+                    <motion.img 
+                      src="/attached_assets/ACCA_logo.svg_1753893407758.png" 
+                      alt="ACCA"
+                      className="w-6 h-6 mobile-sm:w-8 mobile-sm:h-8 sm:w-10 sm:h-10 object-contain flex-shrink-0 self-start mobile-lg:self-center mt-1 mobile-lg:mt-0"
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.6, ease: "easeOut" }}
+                    />
+                  </Link>
+                </motion.div>
+              )}
+
+              {carouselIndex === 4 && (
+                <motion.div 
+                  key="content-4"
+                  className="absolute inset-0 w-full h-full flex items-center"
+                  initial={{ x: '100%' }}
+                  animate={{ x: '0%' }}
+                  exit={{ x: '-100%' }}
+                  transition={{ duration: 0.3, ease: "easeInOut"}}
+                >
+                  {/* This card was already correct, keeping padding for consistency */}
+                  <Link to="/registration" className="flex items-center w-full h-full px-2 mobile-sm:px-3 md:px-4">
+                    <div className="flex-1 min-w-0 flex flex-col justify-center">
+                      <motion.div 
+                        className="flex items-center mb-1 mobile-sm:mb-2"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >
+                        <Calendar className="w-3 h-3 mobile-sm:w-4 mobile-sm:h-4 sm:w-5 sm:h-5 text-red-600 mr-2 flex-shrink-0" />
+                        <h4 className="text-[10px] mobile-sm:text-xs sm:text-sm font-bold text-strategia-navy uppercase tracking-wider">Important Deadline</h4>
+                      </motion.div>
+                      <motion.h5 
+                        className="text-xs mobile-sm:text-sm mobile-md:text-base sm:text-lg font-bold text-red-600 mb-1 sm:mb-2"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >Payment deadline</motion.h5>
+                      <motion.p 
+                        className="text-gray-800 text-xs mobile-sm:text-sm sm:text-base font-bold"
+                        initial={{ x: 50, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut"}}
+                      >25 Jan 2026</motion.p>
+                    </div>
+                  </Link>
+                </motion.div>
+              )}
+              </AnimatePresence>

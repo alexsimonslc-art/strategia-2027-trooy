@@ -1,0 +1,111 @@
+💥 STRATEGIA HOMEPAGE REVAMP — FINAL DESIGN INSTRUCTION
+👁️ GOAL:
+Create a visually powerful, hype-inducing, structured hero section that does justice to a flagship ₹3,00,000 prize pool event. The current design is too soft, bland, and empty. Fix it all.
+
+🔧 CORE FIXES
+🎯 1. STRATEGIA BACKDROP
+Make the "STRATEGIA" logo 100% visible — NOT faded or semi-transparent.
+
+Either:
+
+Make it the full-screen background (centered, with reduced brightness and slight blur only behind text), OR
+
+Bring it front and center, with other content layered on top or around it using z-index.
+
+Ensure it's responsive and scales correctly on mobile + desktop.
+
+🧱 2. HERO COPY & STRUCTURE
+Headline:
+
+nginx
+Copy
+Edit
+The Ultimate Business Strategy Challenge
+Style: Bold, deep blue or black, large font (3xl or 4xl).
+
+Subheadline:
+
+sql
+Copy
+Edit
+Join India’s most prestigious business competition. Compete with the brightest minds, win massive prizes, and launch your career.
+Style: Medium-weight, base or lg font, muted gray or black.
+
+Add a badge above the title:
+
+sql
+Copy
+Edit
+🕒 2-Day Mega Event | Feb 14–15, 2025
+→ Styled like a glowing tag or badge with hover animation.
+
+💰 3. PRIZE POOL CARD
+Must be the centerpiece.
+
+Use glassmorphism / semi-transparent card, floating in the center.
+
+Animation: soft float/pulse or gold shimmer on hover.
+
+Text inside:
+
+mathematica
+Copy
+Edit
+🏆 ₹3,00,000  
+Total Prize Pool  
+₹1,00,000 Grand Finale Prize
+₹3L should be bold, large (3xl)
+
+"Total Prize Pool" → base text
+
+Finale Prize → red or gold colored, maybe reveal animation
+
+🧲 4. CTA BUTTONS
+🔴 Primary CTA:
+
+mathematica
+Copy
+Edit
+Register Now
+Red button (hover glow, pop animation)
+
+⚫ Secondary CTA:
+
+sql
+Copy
+Edit
+View All Events & Prizes
+Outline or ghost-style
+
+Both should be center-aligned below the prize pool card, with spacing.
+
+🔥 5. SPEAKER TEASE
+Section title:
+
+nginx
+Copy
+Edit
+Industry Leaders & Speakers
+Show 6 blurred or silhouetted circular images with question mark overlays.
+
+Tooltip on hover: "Revealed Soon"
+
+Add subtle scroll animation or fade-in on load.
+
+⏱ 6. COUNTDOWN TIMER
+Move the countdown below or fixed at bottom of hero.
+
+Use large digits with soft pulse effect.
+
+Add “Event Starts In” above the timer.
+
+🌐 7. RESPONSIVENESS
+Make the entire hero section mobile-first:
+
+Logo scales down
+
+Content stacks vertically with enough padding
+
+Countdown remains readable
+
+Buttons remain tappable and centered
