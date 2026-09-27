@@ -22,7 +22,17 @@
     }
     var timer = null;
     function tick() {
-      var distance = window.EVENT_DATE.getTime() - Date.now();
+      var rawDate = window.EVENT_DATE;
+      var targetDate;
+      if (rawDate instanceof Date) {
+        targetDate = rawDate;
+      } else if (typeof rawDate === "string") {
+        targetDate = new Date(rawDate);
+      } else {
+        targetDate = new Date("2027-02-15T09:00:00");
+      }
+
+      var distance = targetDate.getTime() - Date.now();
       if (distance > 0) {
         render({
           days: Math.floor(distance / 86400000),
@@ -58,4 +68,47 @@
   }
 
   window.Countdown = { mount: mount };
+
+  // Auto-initialize countdown timers on DOMContentLoaded
+  function autoInit() {
+    var timers = document.querySelectorAll("[data-countdown]");
+    if (timers.length > 0) {
+      timers.forEach(function (el) {
+        if (!el.dataset.countdownMounted) {
+          el.dataset.countdownMounted = "true";
+          mount(el);
+        }
+      });
+    } else {
+      // Fallback: automatically locate containers holding countdown .tabular-nums
+      var nums = document.querySelectorAll(".tabular-nums");
+      if (nums.length >= 4) {
+        var parents = [];
+        nums.forEach(function (n) {
+          var parent = n.parentElement;
+          while (parent && parent !== document.body) {
+            if (parent.querySelectorAll(".tabular-nums").length >= 4) {
+              if (parents.indexOf(parent) === -1) {
+                parents.push(parent);
+              }
+              break;
+            }
+            parent = parent.parentElement;
+          }
+        });
+        parents.forEach(function (el) {
+          if (!el.dataset.countdownMounted) {
+            el.dataset.countdownMounted = "true";
+            mount(el);
+          }
+        });
+      }
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", autoInit);
+  } else {
+    autoInit();
+  }
 })();
