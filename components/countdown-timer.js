@@ -51,18 +51,33 @@
     // spotlight that follows the cursor inside each box
     numbers.forEach(function (num) {
       var box = num.parentElement;
-      var light = box.firstElementChild;
+      if (box) {
+        box.style.opacity = "1"; // Force visibility of the countdown box
+      }
+      var light = box && box.firstElementChild;
       if (!light || light === num) return;
       light.removeAttribute("data-motion");
-      Motion.set(light, { opacity: 0 });
+      if (window.Motion && typeof window.Motion.set === "function") {
+        Motion.set(light, { opacity: 0 });
+      } else {
+        light.style.opacity = "0";
+      }
       box.addEventListener("mousemove", function (e) {
         var r = box.getBoundingClientRect();
         light.style.background = "radial-gradient(120px circle at " + (e.clientX - r.left) + "px " + (e.clientY - r.top) +
           "px, rgba(255, 255, 255, 0.4) 0%, transparent 70%)";
-        Site.animateIfChanged(light, { opacity: 1 }, { duration: 0.2, ease: "easeOut" });
+        if (window.Site && typeof window.Site.animateIfChanged === "function") {
+          Site.animateIfChanged(light, { opacity: 1 }, { duration: 0.2, ease: "easeOut" });
+        } else {
+          light.style.opacity = "1";
+        }
       });
       box.addEventListener("mouseleave", function () {
-        Site.animateIfChanged(light, { opacity: 0 }, { duration: 0.2, ease: "easeOut" });
+        if (window.Site && typeof window.Site.animateIfChanged === "function") {
+          Site.animateIfChanged(light, { opacity: 0 }, { duration: 0.2, ease: "easeOut" });
+        } else {
+          light.style.opacity = "0";
+        }
       });
     });
   }
