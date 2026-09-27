@@ -1,0 +1,15 @@
+/*
+ * STRATEGIA'26 — layout switch
+ * Each page contains a desktop layout and a mobile layout (the React site
+ * rendered different components per device). lib/device.js adds the
+ * "is-mobile" class to <html>; only the matching layout is shown.
+ */
+html.is-mobile .view-desktop,
+html:not(.is-mobile) .view-mobile {
+  display: none !important;
+}
+
+/* React rendered a bare #root; keep the same box model */
+#root {
+  min-height: 100vh;
+}
