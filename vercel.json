@@ -1,0 +1,99 @@
+{
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/pages/about.html",
+      "permanent": false
+    },
+    {
+      "source": "/events",
+      "destination": "/pages/events.html",
+      "permanent": false
+    },
+    {
+      "source": "/schedule",
+      "destination": "/pages/schedule.html",
+      "permanent": false
+    },
+    {
+      "source": "/registration",
+      "destination": "/pages/registration.html",
+      "permanent": false
+    },
+    {
+      "source": "/registration-confirmation",
+      "destination": "/pages/registration-confirmation.html",
+      "permanent": false
+    },
+    {
+      "source": "/panel-confirmation",
+      "destination": "/pages/panel-confirmation.html",
+      "permanent": false
+    },
+    {
+      "source": "/sponsors",
+      "destination": "/pages/sponsors.html",
+      "permanent": false
+    },
+    {
+      "source": "/gallery",
+      "destination": "/pages/gallery.html",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html",
+      "permanent": false
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/pages/privacy-policy.html",
+      "permanent": false
+    },
+    {
+      "source": "/rules-regulations",
+      "destination": "/pages/rules-regulations.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/panel-discussion",
+      "destination": "/pages/panel-discussion.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/startup-expo",
+      "destination": "/pages/startup-expo.html",
+      "permanent": false
+    },
+    {
+      "source": "/panel-discussion/register",
+      "destination": "/pages/panel-registration-form.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/strategiq",
+      "destination": "/pages/events/strategiq.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/market-masters",
+      "destination": "/pages/events/market-masters.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/venturex",
+      "destination": "/pages/events/venturex.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/case-quest",
+      "destination": "/pages/events/case-quest.html",
+      "permanent": false
+    },
+    {
+      "source": "/events/final-showdown",
+      "destination": "/pages/events/final-showdown.html",
+      "permanent": false
+    }
+  ]
+}

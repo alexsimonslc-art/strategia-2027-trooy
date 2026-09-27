@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#00204E" />
+    <link rel="icon" type="image/png" href="/attached_assets/Domain-Logo_1757334218512.png" />
+    <link rel="apple-touch-icon" href="/attached_assets/Domain-Logo_1757334218512.png" />
+    <title>STRATEGIA'26 - Business Strategy Challenge</title>
+    <meta
+      name="description"
+      content="Join STRATEGIA 2026, The Ultimate Business Strategy Challenge presented by the Department of B.Com (Honours) Loyola College, Chennai. Showcase your talent, compete with sharp minds, and register online!"
+    />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/site.css" />
+    <script src="/lib/device.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W38XVTJ1Q5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-W38XVTJ1Q5");
+    </script>
+  </head>
+  <body data-page="not-found" data-route="/404">
+    <div id="root">
+      <div data-component="toaster"></div>
+
+      <!-- ============================================================
+         DESKTOP LAYOUT (shown on laptops / desktops)
+         ============================================================ -->
+      <div class="view-desktop min-h-screen flex flex-col">
+        <div data-component="cursor-trail"></div>
+        <div data-component="navigation"></div>
+        <main class="flex-1">
+          <div class="min-h-screen w-full flex items-center justify-center bg-gray-50">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-full max-w-md mx-4">
+              <div class="p-6 pt-6">
+                <div class="flex mb-4 gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-alert h-8 w-8 text-red-500"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" x2="12" y1="8" y2="12"></line>
+                    <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                  </svg>
+                  <h1 class="text-2xl font-bold text-gray-900">404 Page Not Found</h1>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">Did you forget to add the page to the router?</p>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div data-component="footer"></div>
+      </div>
+
+      <!-- ============================================================
+         MOBILE LAYOUT (shown on phones / tablets)
+         ============================================================ -->
+      <div class="view-mobile min-h-screen bg-white">
+        <div data-component="mobile-navigation"></div>
+        <div class="pb-20">
+          <div class="p-4 text-center">Mobile 404 - Page Not Found</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/site-config.js"></script>
+    <script src="/lib/constants.js"></script>
+    <script src="/lib/utils.js"></script>
+    <script src="/lib/static-api.js"></script>
+    <script src="/components/ui/toaster.js"></script>
+    <script src="/components/layout/navigation.js"></script>
+    <script src="/components/layout/footer.js"></script>
+    <script src="/components/mobile/mobile-navigation.js"></script>
+    <script src="/components/cursor-trail.js"></script>
+    <script src="/lib/motion.js"></script>
+    <script src="/lib/states.js"></script>
+  </body>
+</html>
